@@ -1,22 +1,45 @@
 import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {initFlowbite} from "flowbite";
+
+import {NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgForOf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
   title = 'modalUtilizable';
 
 
-  ngOnInit(): void {
-    initFlowbite();
-  }
+   data = [
+    {
+      nombre:"Genaro",
+      apellido:"Jose",
+      carrera:"Informatica",
 
+    },
+     {
+       nombre:"Angel",
+       apellido:"Fernando",
+       carrera:"Informatica",
+
+     },
+     {
+       nombre:"Kevin",
+       apellido:"Arango",
+       carrera:"Informatica",
+
+     },
+     {
+       nombre:"Eduardo",
+       apellido:"Emilio",
+       carrera:"Informatica",
+
+     }
+  ]
 
 }
 
