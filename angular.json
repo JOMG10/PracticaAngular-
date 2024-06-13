@@ -27,9 +27,13 @@
               }
             ],
             "styles": [
+              "node_modules/flowbite/dist/flowbite.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/flowbite/dist/flowbite.js"
+
+            ]
           },
           "configurations": {
             "production": {
